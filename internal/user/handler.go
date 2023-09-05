@@ -3,6 +3,7 @@ package user
 import (
 	"github.com/arxon31/user-service/internal/handlers"
 	"github.com/go-chi/chi/v5"
+	"log/slog"
 	"net/http"
 )
 
@@ -12,10 +13,13 @@ const (
 )
 
 type handler struct {
+	logger *slog.Logger
 }
 
-func NewHandler() handlers.Handler {
-	return &handler{}
+func NewHandler(logger *slog.Logger) handlers.Handler {
+	return &handler{
+		logger: logger,
+	}
 }
 func (h *handler) Register(router *chi.Mux) {
 	router.Get(usersURL, h.GetListOfUsersHandler)
