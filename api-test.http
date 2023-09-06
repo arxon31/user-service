@@ -1,35 +1,35 @@
-POST http://localhost:8080/users/123
+POST http://127.0.0.1:10000/users/123
 Content-Type: application/json
 
 {}
 
 ###
 
-PUT http://localhost:8080/users/123
+PUT http://127.0.0.1:10000/users/123
 Content-Type: application/json
 
 {}
 
 ###
 
-PATCH http://localhost:8080/users/123
+PATCH http://127.0.0.1:10000/users/123
 Content-Type: application/json
 
 {}
 
 ###
 
-DELETE http://localhost:8080/users/123
+DELETE http://127.0.0.1:10000/users/123
 Content-Type: application/json
 
 {}
 
 ###
 
-GET http://localhost:8080/users/123
+GET http://127.0.0.1:10000/users/123
 
 ###
-GET http://localhost:8080/users
+GET http://127.0.0.1:10000/users
 
 ###
 
